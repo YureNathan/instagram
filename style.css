@@ -1,0 +1,46 @@
+body {
+  background-color: antiquewhite;
+  font-family: "Roboto", sans-serif;
+}
+
+.barraSuperior {
+  height: 54px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+}
+.barraSuperior img {
+  max-width: 120px;
+  padding: 12px;
+}
+.icones {
+  display: flex;
+  justify-content: space-around;
+  width: 180px;
+}
+.icones ion-icon {
+  font-size: 25px;
+}
+/* Falta fixar menu  */
+
+.storys {
+   display: flex;
+  /* align-items: flex-start; 
+  justify-content: center; */
+  width: 40%;
+  height: 118px;
+  border: 1px solid #dbdbdb;
+  margin-top: 38px;
+}
+.storyCards {
+  padding: 10px;
+}
+.storyCards img {
+  max-width: 56px;
+}
+.storyCards h3 {
+  font-size: 12px;
+  text-align: center;
+}
