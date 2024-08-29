@@ -2,12 +2,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .container {
-  width: 100vw;
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  background-color: #fafafa;
+  align-items: baseline;
+  /* background-color: aqua; */
 }
 .barraSuperior {
   display: flex;
@@ -20,6 +19,7 @@ body {
   top: 0;
   height: 54px;
   width: 100%;
+  z-index: 1;
 }
 .barraSuperior img {
   max-width: 120px;
@@ -33,7 +33,13 @@ body {
 .icones ion-icon {
   font-size: 25px;
 }
-/* Falta fixar menu  */
+
+.conteudoEsquerdo{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 .storys {
   display: flex;
@@ -52,49 +58,59 @@ body {
 .storyCards h3 {
   font-size: 12px;
   text-align: center;
-
 }
 .post {
   max-width: 614px;
   border: 1px solid #dbdbdb;
   margin-top: 24px;
   margin-bottom: 60px;
+  background-color: #fff;
 }
 .post img {
-  max-width: 614px;
+  max-width: 100%;
 }
 
 .postTopo {
   display: flex;
-  width: 100%;
   align-items: center;
-  padding: 10px;
+  padding: 12px;
 }
 .postTopo p {
   font-weight: 500;
+  margin-left: 14px;
 }
 
 .postTopo img {
   max-width: 32px;
-  max-height: 32px;
   border-radius: 50%;
-  margin-right: 10px;
 }
 
 .postBotoes {
-  height: 44px;
   display: flex;
-  /* width: 250px; */
+  font-size: 22px;
   justify-content: space-between;
-  background-color: white;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  z-index: 2;
+}
+
+.slideBar {
+  /* background-color: antiquewhite; */
+  width: 293px;
+  padding: 30px;
 }
 
 .perfil {
-  background-color: aqua;
   display: flex;
   align-items: center;
-  padding: 10px;
+
+  /* flex-wrap: wrap; */
+  width: 184px;
+  /* height: 45px; */
+  padding: 5px;
 }
+
 .perfilImg {
   max-width: 56px;
   border-radius: 50%;
