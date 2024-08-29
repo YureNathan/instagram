@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
+
 }
 .container {
   width: 100%;
@@ -44,9 +45,10 @@ body {
   display: flex;
   width: 614px;
   overflow: hidden;
-  background: #fff;
+  background-color: #fff;
   border: 1px solid #dbdbdb;
   margin-top: 92px;
+  margin-bottom: 24px;
 }
 .storyCards {
   padding: 9px;
@@ -59,9 +61,8 @@ body {
   text-align: center;
 }
 .post {
-  max-width: 614px;
+  width: 614px;
   border: 1px solid #dbdbdb;
-  margin-top: 24px;
   margin-bottom: 60px;
   background-color: #fff;
 }
@@ -95,7 +96,7 @@ body {
 }
 
 .slideBar {
-  max-width: 293px;
+  max-width: 350px;
   padding: 30px;
 }
 
@@ -122,9 +123,7 @@ body {
   border-radius: 50%;
 }
 .sugestoes {
-  width: 350px;
   margin-top: 24px;
-
 }
 .sugestoes h2 {
   font-weight: 500;
@@ -153,4 +152,49 @@ body {
 }
 .slideBar h4 {
   padding: 14px;
+}
+.barraInferior {
+  display: none;
+}
+@media (max-width: 935px) {
+  .slideBar {
+    display: none;
+  }
+  .barraSuperior {
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (max-width: 614px) {
+ .container {
+  overflow: hidden;
+ }
+  .icones {
+    display: none;
+  }
+  .storys {
+    background-color: #fafafa;
+    margin-top: 54px;
+    margin-bottom: 0;
+  }
+  .post {
+    width: 100%;
+  }
+  .barraInferior {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 612px;
+    height: 54px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  .barraInferior ion-icon {
+    font-size: 22px;
+  }
+  .post {
+    width: 100%;
+  }
 }
