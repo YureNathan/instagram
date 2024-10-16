@@ -1,6 +1,5 @@
 body {
   font-family: "Roboto", sans-serif;
-
 }
 .container {
   width: 100%;
@@ -161,14 +160,15 @@ body {
     display: none;
   }
   .barraSuperior {
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 20px;
     align-items: center;
   }
 }
 @media (max-width: 614px) {
- .container {
-  overflow: hidden;
- }
+  .container {
+    overflow: hidden;
+  }
   .icones {
     display: none;
   }
